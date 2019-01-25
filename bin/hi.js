@@ -7,6 +7,8 @@ const program = require('commander');
 const packageJSON = require('../package.json'); //  获取package.json
 const path = require('path')
 
+require('../src')
+
 program
   .version(packageJSON.version)
   .option('-C, --chdir <path>', 'change the working directory') // hi -C path
